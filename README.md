@@ -1,4 +1,4 @@
-
+````md
 # 🚀 Claude Code + Gemini Full Setup (Windows Guide)
 
 This guide helps you set up **Claude-Code + Gemini Models** together using  
@@ -8,24 +8,25 @@ This guide helps you set up **Claude-Code + Gemini Models** together using
 
 ## 🔥 STEP 0 — Confirm Node.js
 
-PowerShell open karein → run:
+Open PowerShell → run:
 
 ```bash
 node --version
-```
+````
 
-Agar **18+** version nahi hai → install karein:
+If your version is **not 18+**, install it:
 
-👉 https://nodejs.org
+👉 [https://nodejs.org](https://nodejs.org)
 
 ---
 
 ## 🔥 STEP 1 — GET GOOGLE API KEY
 
-1. Open: https://aistudio.google.com  
-2. Click → **Get API Key**  
-3. Click → **Create API Key**  
-4. Key copy kar len (example):  
+1. Open: [https://aistudio.google.com](https://aistudio.google.com)
+2. Click → **Get API Key**
+3. Click → **Create API Key**
+4. Copy your API key (example):
+
    ```
    AIzaSy........
    ```
@@ -55,7 +56,7 @@ mkdir $HOME/.claude
 
 ## 🔥 STEP 4 — CREATE CONFIG.JSON (WINDOWS VERSION)
 
-Windows me `cat << EOF` work nahi karta, isliye Notepad method use hoga.
+`cat << EOF` does not work on Windows, so we will use Notepad.
 
 Run:
 
@@ -63,7 +64,7 @@ Run:
 notepad $HOME/.claude-code-router/config.json
 ```
 
-Notepad open hoga → isme ye **exact JSON** paste karein:
+Notepad will open → paste this **exact JSON**:
 
 ```json
 {
@@ -96,8 +97,8 @@ Notepad open hoga → isme ye **exact JSON** paste karein:
 }
 ```
 
-✔ Save  
-✔ Close
+✔ Save
+✔ Close Notepad
 
 ---
 
@@ -115,7 +116,7 @@ Replace:
 YOUR_KEY_HERE
 ```
 
-With your actual Google API Key.
+With your actual Google API key.
 
 Example:
 
@@ -123,14 +124,15 @@ Example:
 [System.Environment]::SetEnvironmentVariable('GOOGLE_API_KEY', 'AIzaSyXXXXX...', 'User')
 ```
 
-### ⚠️ IMPORTANT  
-PowerShell **close** karen → new PowerShell open → check:
+### ⚠️ IMPORTANT
+
+Close PowerShell → open a new PowerShell window → check:
 
 ```bash
 echo $env:GOOGLE_API_KEY
 ```
 
-Agar value show ho jaye → **Perfect! 🔥**
+If your key appears → **Perfect! 🔥**
 
 ---
 
@@ -144,7 +146,7 @@ ccr version
 echo $env:GOOGLE_API_KEY
 ```
 
-Agar sab commands ka output aa jaye → ✔ Setup success
+If all commands return output → ✔ Setup successful
 
 ---
 
@@ -192,5 +194,12 @@ Then type:
 hi
 ```
 
-Agar **Claude reply** kare →  
+If **Claude replies** →
 🎉 **Congratulations! FREE CLAUDE CODE + GEMINI WORKING! 🚀💯**
+
+```
+
+---
+
+If you want, I can also **format it professionally**, convert it to **PDF**, or create a **GitHub-ready README.md**.
+```
