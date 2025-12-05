@@ -66,6 +66,9 @@ notepad $HOME/.claude-code-router/config.json
 
 Notepad will open → paste this **exact JSON**:
 
+⚠️ NOTE: Please add your GEMINI API KEY to the config.json file.
+If you do not add your GEMINI API KEY, Claude Code will not work.
+
 ```json
 {
   "LOG": true,
@@ -196,6 +199,3 @@ hi
 
 If **Claude replies** →
 🎉 **Congratulations! FREE CLAUDE CODE + GEMINI WORKING! 🚀💯**
-
-```
-
