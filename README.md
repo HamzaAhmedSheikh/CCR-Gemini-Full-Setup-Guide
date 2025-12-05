@@ -1,4 +1,4 @@
-````md
+
 # 🚀 Claude Code + Gemini Full Setup (Windows Guide)
 
 This guide helps you set up **Claude-Code + Gemini Models** together using  
@@ -8,11 +8,11 @@ This guide helps you set up **Claude-Code + Gemini Models** together using
 
 ## 🔥 STEP 0 — Confirm Node.js
 
-Open PowerShell → run:
+PowerShell open karein → run:
 
 ```bash
 node --version
-````
+```
 
 If your version is **not 18+**, install it:
 
@@ -77,7 +77,7 @@ Notepad will open → paste this **exact JSON**:
     {
       "name": "gemini",
       "api_base_url": "https://generativelanguage.googleapis.com/v1beta/models/",
-      "api_key": "$GOOGLE_API_KEY",
+      "api_key": "YOUR_API_KEY_HERE",
       "models": [
         "gemini-2.5-flash",
         "gemini-2.0-flash"
@@ -199,7 +199,3 @@ If **Claude replies** →
 
 ```
 
----
-
-If you want, I can also **format it professionally**, convert it to **PDF**, or create a **GitHub-ready README.md**.
-```
